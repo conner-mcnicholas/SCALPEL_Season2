@@ -102,7 +102,7 @@ for div in range (1,4):
     print(df_stats.reset_index(drop=True).to_string())
 
     current_ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %p")
-    f = open(f"/home/conner/SCALPEL_Season2/stats_updatelog_d{div}.txt", "a")
+    f = open(f"/home/conner/SCALPEL_Season2/logs/stats_updatelog_d{div}.txt", "a")
     f.write(f'{len(played)} matches in stats | UPDATING ADHOC | {current_ts}\n')
     stats_ws = sh.worksheet(f"A{div}")
     set_with_dataframe(stats_ws, df_stats_tophalf, row=3, col=2)

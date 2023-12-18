@@ -81,7 +81,7 @@ for div in range (1,4):
     print(df_standings.reset_index(drop=True).to_string())
 
     current_ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %p")
-    f = open(f"/home/conner/SCALPEL_Season2/standings_updatelog_d{div}.txt", "a")
+    f = open(f"/home/conner/SCALPEL_Season2/logs/standings_updatelog_d{div}.txt", "a")
     f.write(f'{len(played)} matches in standings | UPDATING D{div} STANDINGS | {current_ts}\n')
     standings_ws = sh.worksheet(f"D{div}")
     set_with_dataframe(standings_ws, df_standings, row=2, col=2)
