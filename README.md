@@ -1,7 +1,7 @@
 # SEASON 2
 
-Scripts to:
- -pull match results from and 
- -push standings/stats to 
-
+Scripts to:<br>
+&emsp;&emsp;-pull match results from and<br>
+&emsp;&emsp;-push standings/stats to<br>
+<br>
 pickleball league dashboards run in Google Sheets.
